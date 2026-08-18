@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pink Calculator 🎀</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="decor decor1">♡</div>
+    <div class="decor decor2">✦</div>
+    <div class="decor decor3">♡</div>
+
+    <main class="calculator">
+
+        <div class="brand">
+            <span>🎀</span>
+            <h1>Pink Calculator</h1>
+            <span>✨</span>
+        </div>
+
+        <div class="display">
+            <div id="history"></div>
+            <div id="display">0</div>
+        </div>
+
+        <div class="buttons">
+
+            <button class="function" onclick="clearDisplay()">AC</button>
+            <button class="function" onclick="deleteNumber()">⌫</button>
+            <button class="function" onclick="percentage()">%</button>
+            <button class="operator" onclick="chooseOperator('/')">÷</button>
+
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button class="operator" onclick="chooseOperator('*')">×</button>
+
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button class="operator" onclick="chooseOperator('-')">−</button>
+
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button class="operator" onclick="chooseOperator('+')">+</button>
+
+            <button class="zero" onclick="appendNumber('0')">0</button>
+            <button onclick="appendDecimal()">.</button>
+            <button class="equals" onclick="calculate()">=</button>
+
+        </div>
+
+        <p class="footer">Made with 💗 for School Portfolio</p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
